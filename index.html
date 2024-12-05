@@ -1,85 +1,451 @@
-<!-- PWA: https://bsehovac.github.io/the-cube/ -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clothing Ecommerce Website</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+      
 
-<div class="ui">
+        <link rel="stylesheet" href="style.css">
+      <!-------------------------Font Awesome Icons --------------->  
+  <script src="https://kit.fontawesome.com/dad03e859c.js" crossorigin="anonymous"></script>
+  <!----------x---------------Font Awesome Icons --------x------->
 
-  <div class="ui__background"></div>
+  <!----------x---------------Google font --------x------->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Berkshire+Swash&family=Comic+Neue:wght@700&family=Gentium+Book+Plus:wght@400;700&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=Lexend+Deca:wght@500&family=Lexend:wght@500&family=Montserrat:wght@500&family=Open+Sans:wght@500;800&family=Roboto:wght@100;400&family=Sue+Ellen+Francisco&family=Work+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+      
+      <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900;&display:swap">
+       <!----------x---------------Google font --------x----------------->
+ 
+    </head>
 
-  <div class="ui__game"></div>
-
-  <div class="ui__texts">
-    <h1 class="text text--title">
-      <span>THE</span>
-      <span>CUBE</span>
-    </h1>
-    <div class="text text--note">
-      Double tap to start
-    </div>
-    <div class="text text--timer">
-      0:00
-    </div>
-    <div class="text text--complete">
-      <span>Complete!</span>
-    </div>
-    <div class="text text--best-time">
-      <icon trophy></icon>
-      <span>Best Time!</span>
-    </div>
-  </div>
-
-  <div class="ui__prefs">
-    <range name="size" title="Cube Size" list="2,3,4,5"></range>
-    <range name="flip" title="Flip Type" list="Swift&nbsp;,Smooth,Bounce"></range>
-    <range name="scramble" title="Scramble Length" list="20,25,30"></range>
-    <range name="fov" title="Camera Angle" list="Ortographic,Perspective"></range>
-    <range name="theme" title="Color Scheme" list="Cube,Erno,Dust,Camo,Rain"></range>
-  </div>
-
-  <div class="ui__theme">
-    <range name="hue" title="Hue" color></range>
-    <range name="saturation" title="Saturation" color></range>
-    <range name="lightness" title="Lightness" color></range>
-  </div>
-
-  <div class="ui__stats">
-    <div class="stats" name="cube-size">
-      <i>Cube:</i><b>3x3x3</b>
-    </div>
-    <div class="stats" name="total-solves">
-      <i>Total solves:</i><b>-</b>
-    </div>
-    <div class="stats" name="best-time">
-      <i>Best time:</i><b>-</b>
-    </div>
-    <div class="stats" name="worst-time">
-      <i>Worst time:</i><b>-</b>
-    </div>
-    <div class="stats" name="average-5">
-      <i>Average of 5:</i><b>-</b>
-    </div>
-    <div class="stats" name="average-12">
-      <i>Average of 12:</i><b>-</b>
-    </div>
-    <div class="stats" name="average-25">
-      <i>Average of 25:</i><b>-</b>
-    </div>
-  </div>
-
-  <div class="ui__buttons">
-    <button class="btn btn--bl btn--stats">
-      <icon trophy></icon>
-    </button>
-    <button class="btn btn--br btn--prefs">
-      <icon settings></icon>
-    </button>
-    <button class="btn btn--bl btn--back">
-      <icon back></icon>
-    </button>
-    <button class="btn btn--br btn--theme">
-      <icon theme></icon>
-    </button>
-    <button class="btn btn--br btn--reset">
-      <icon reset></icon>
-    </button>
-  </div>
-
+    <body>
+ <section id="header">
+            <a href="#"><img src="https://i.postimg.cc/QtXLQFtB/Logo-maker-project-1.png"></a>
+            <div>
+      <ul id="navbar">
+ <li><a href="index.html" class="active">Home</a></li>
+ <li><a href="shop.html">Shop</a></li>
+ <li><a href="blog.html">Blog</a></li>
+ <li><a href="about.html">About</a></li>
+ <li><a href="contact.html">Contact</a></li>
+ <li><a href="cart.html" id="lg-bag"><i class="fal fa-shopping-bag"></i></a>
+   <span class="quantity">0</span>
+ </li>
+ <li><a href="#" id="close"<i class="far fa-times"></i></a></li>
+                </ul>
+            </div>
+<div id="mobile">
+  <a href="cart.html" ><i class="fal fa-shopping-bag"></i>
+    <span class="quantity">0</span>
+  </a>
+  <i id="bar" class="fas fa-outdent"></i>
 </div>
+        </section>
+
+<section id="hero">
+  <h4></h4>
+  <h2></h2>
+  <h1>Lunpath</h1>
+  <p>Not real shop i make it to tell my freind (azzam)</p>
+  <button>Shop Now</button>
+  
+</section>
+
+<section id="product1" class="section-p1">
+  <h2>Featured Products</h2>
+  <p>Summer Collection New Modern Design</p>
+  <div class="pro-container">
+    <div class="pro" onclick="window.location.href='https://codepen.io/Motun/full/OJBwbrQ'">
+      <img src="https://i.postimg.cc/kg9YYbTn/f1.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Carton Astronault Tshirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/2yhT2kvb/f2.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Carton Leave Tshirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/VL9DtNm2/f3.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Rose Multicolor Tshirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/vZ3hPS1z/f4.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Pink Flower Tshirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/q7FLrhx6/f5.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Purple Flowering Tshirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/L86BZByZ/f7.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Short Knicker </h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/zDxJ2f0H/f6.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>2 in 1 Double Routed</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/x8qcBrpP/n6.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+  </div>
+</section>
+
+<section id="banner" class="section-m1">
+  <h4> Repair Service</h4>
+  <h2>Up to <span>70% off </span> - All Tshirts and Accessories</h2>
+  </section>
+
+<section id="product1" class="section-p1">
+  <h2>New Arrivals</h2>
+  <p>Summer Collection New Modern Design</p>
+  <div class="pro-container">
+    <div class="pro">
+      <img src="https://i.postimg.cc/hG1hqqK6/n1.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Carton Astronault Tshirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/BZkSkvxt/n2.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Carton Leave Tshirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/KYjcC3sk/n3.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Rose Multicolor Tshirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/vHvQBtJx/n4.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Pink Flower Tshirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/908J8S4q/n5.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Purple Flowering Tshirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/X7r8NsGQ/n7.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Short Knicker </h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/JhrH0hYM/n8.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>2 in 1 Double Routed</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/2Sq4mytJ/f8.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+   
+    
+  </div>
+</section>
+
+    
+<section id="newsletter" class="section-p1">
+  <div class="newstext">
+    <h4>Sign Up for Newsletters</h4>
+    <p>Get Email updates about our latest shop and <span> special offers.</span> </p>
+  </div>
+    <div class="form">
+    <input type="text" placeholder="Your email address">
+       <button class="btn normal">Sign Up</button>
+    </div>
+   
+  </div>
+  
+</section>
+
+<footer class="section-p1">
+  
+<div class="col">
+<a href="#"><img class="logo" src="https://i.postimg.cc/QtXLQFtB/Logo-maker-project-1.png"></a>
+    <h4>Contact</h4>
+    <p><strong>Phone:</strong> 0561224058</p>
+       <div class="follow">
+         <h4>Follow Us</h4>
+         <div class="icon">
+           <i class="fab fa-facebook-f"></i>
+           <i class="fab fa-instagram"></i>
+           <i class="fab fa-twitter"></i>
+           <i class="fab fa-youtube"></i>
+           <i class="fab fa-pinterest-p"></i>
+            </div>
+       </div>
+       </div>
+      
+    <div class="sec">   
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms and Condition</a>
+      <a href="#">Contact Us</a>
+   </div>
+    
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">My Account</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track my Order</a>
+      <a href="#">Help</a>
+        
+    </div>
+    
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+ 
+      <div class="row">
+      <img src="https://i.postimg.cc/Y2s5mLdR/app.jpg" alt="">
+      <img src="https://i.postimg.cc/7YvyWTS6/play.jpg" alt="">
+    </div>
+    <p>Secured Payment Gateways</p>
+    <img src="https://i.postimg.cc/kgfzqVRW/pay.png" alt="">
+       </div>
+  </div>
+  
+  <div class="coypright">
+      <p> © 2023 All rights reserved! made by Abdulrahman aref </p>
+    </div>
+  
+ </footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+
+<script src="script.js"></script>
+    </body>
+
+</html>
